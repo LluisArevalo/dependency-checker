@@ -1,9 +1,8 @@
-const formatDependency = ([key, value], version) => {
+const formatTableRow = ([key, value]) => {
   return {
-    package: key,
-    version: value,
-    latestVersion: version
+    packageName: key,
+    currentVersion: value
   };
 }
 
-export default formatDependency;
+export default formatTableRow;
